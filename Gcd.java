@@ -32,5 +32,6 @@ public class Gcd {
         System.out.print("Enter number 2: ");
         int b = sc.nextInt();
         System.out.println("GCD: "+getGCD(a, b));
+        sc.close();
     }
 }

@@ -8,6 +8,7 @@ public class Fibonacci {
         int n=sc.nextInt();
         System.out.println("Fibonacci Series");
         getFibonacci(n);
+        sc.close();
     }
 
     static void getFibonacci(int n)
