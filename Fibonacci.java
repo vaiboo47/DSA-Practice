@@ -1,4 +1,3 @@
-// Fibonacci Series
 // Generate Fibonacci series upto n numbers
 // Example: 0 1 1 2 3
 import java.util.*;
