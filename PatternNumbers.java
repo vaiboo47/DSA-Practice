@@ -11,6 +11,7 @@ public class PatternNumbers {
         pattern5();
         System.out.println();
         pattern6();
+        System.out.println();
     }
     static void pattern1()
     {
@@ -33,6 +34,7 @@ public class PatternNumbers {
             System.out.println();
         }
     }
+    
     static void pattern3()
     {
         for(int i=1;i<=5;i++)
@@ -40,23 +42,23 @@ public class PatternNumbers {
             for(int j=1;j<=5;j++)
             {
                 if(j%2==0)
-                System.out.print(0+" ");
-                else
                 System.out.print(1+" ");
+                else
+                System.out.print(0+" ");
             }
             System.out.println();
         }
     }
     static void pattern4()
     {
-        for(int i=1;i<=5;i++)
+        int n=5;
+        int count=1;
+        for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=5;j++)
+            for(int j=1;j<=n;j++)
             {
-                if(j%2==0)
-                System.out.print(1+" ");
-                else
-                System.out.print(0+" ");
+                System.out.print(count+" ");
+                count++;
             }
             System.out.println();
         }
@@ -66,21 +68,25 @@ public class PatternNumbers {
         int n=5;
         for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=n;j++)
+            for(int j=1;j<=i;j++)
             {
-                System.out.print(i+j+" ");
+                System.out.print(j+" ");
             }
             System.out.println();
         }
     }
     static void pattern6()
     {
-        int n=5;
-        for(int i=0;i<n;i++)
+        int n=5,j=1;
+        for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=n;j++)
+            for(j=1;j<=n-i;j++)
             {
-                System.out.print(i+j+" ");
+                System.out.print("  ");
+            }
+            for(j=j;j<=n;j++)
+            {
+                System.out.print(j+" ");
             }
             System.out.println();
         }
